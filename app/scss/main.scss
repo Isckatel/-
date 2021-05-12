@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  //text-decoration: none;
   color:$textMainColor;
   transition: color 400ms ease;
   &:hover {
@@ -98,3 +98,79 @@ a {
     } //info
   } //about
 }//block header-intro
+
+h2 {
+  width: 300px;
+  padding: 10px;
+  display: block;
+  margin: 35px auto 30px;
+  background: #eee;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: $mainColor;
+  font-weight: bolder;
+  font-size: 26px;
+  text-align: center;
+}
+
+.skills {
+  @extend  %container;
+  width:900px;
+  margin: 0 auto;
+
+  >p {
+    color: $textMainColor;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    line-height: 200%; //120% def
+    margin-left: 20px;
+    list-style-position: inside;
+    column-count: 2;
+    //list-style-type: decimal;
+  }
+}
+
+.portfolio {
+
+  width: 900px;
+  display: flex;
+  margin: 50px auto;
+
+  h3 {
+    display: block;
+    position: relative;
+    top:-40px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+    background: $mainColor;
+    color:#fff;
+  }
+
+  div {
+    @extend %container;
+    width: 290px;
+
+    p {
+      position: relative;
+      top:-20px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+footer {
+  width: 900px;
+  display: block;
+  text-align: right;
+  margin: 20px auto 0;
+  padding: 20px 0;
+  border-top: 1px solid $mainColor;
+}

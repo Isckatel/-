@@ -55,6 +55,7 @@ a {
 
     .aout-text {
       line-height: 150%; //120% def
+      text-align: justify;
     }
 
     .info {
@@ -71,26 +72,29 @@ a {
           margin-right: 10px;
           color: #666;
         }
-      }
-    }
 
-    .social {
-      i {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background: #eee;
-        text-align: center;
-        line-height: 30px; //выровнять по вертикале с помощью этого
-        margin-right: 5 px;
-        color:#000;
-        font-size: 14px;
-        cursor: pointer;
-
-        &:hover {
-          color: $mainColor;
+        a.social {
+          margin-right: 5px;
+          position: relative;
+          top:-5px;
         }
-      }
-    } //social
+
+        i {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: #eee;
+          text-align: center;
+          line-height: 30px; //выровнять по вертикале с помощью этого
+          color:#000;
+          font-size: 14px;
+          cursor: pointer;
+
+          &:hover {
+            color: $mainColor;
+          }
+        }
+      } //>div
+    } //info
   } //about
 }//block header-intro

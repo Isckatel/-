@@ -27,7 +27,7 @@ a {
 
 .header-intro {
   @extend   %container;
-  width:900px;
+  max-width:900px;
   margin: 30px auto;
   display: flex;
 
@@ -115,7 +115,7 @@ h2 {
 
 .skills {
   @extend  %container;
-  width:900px;
+  max-width:900px;
   margin: 0 auto;
 
   >p {
@@ -134,7 +134,7 @@ h2 {
 
 .portfolio {
 
-  width: 940px;
+  max-width: 940px;
   display: flex;
   flex-wrap:wrap;
   margin: 50px auto 0;
@@ -194,7 +194,7 @@ h2 {
 
   #asutp {
     width: 700px;
-    height: 650px;
+    min-height: 650px;
     padding: 30px;
     background: #fff;
     border: 2px solid $mainColor;
@@ -240,3 +240,82 @@ footer {
   padding: 20px 0;
   border-top: 1px solid $mainColor;
 }
+
+.test {
+  height: 20px;
+  width: 900px;
+  display: block;
+  margin:-20px auto 0;
+  font-size: 12px;
+}
+
+@media (max-width: 940px)  {
+  .header-intro {
+    width: 100%;
+    margin: 10px;
+    padding: 0;
+    flex-direction: column;
+
+    .img-ava {
+      display: flex;
+      margin: $marginAdaptive;}
+
+    .about {
+      h1 {
+        margin: $marginAdaptive;
+        font-size: 22px;
+      }
+      .prof {margin:2px;}
+
+      .aout-text {
+        margin: $marginAdaptive;
+        line-height: 120%;
+      }
+      .info {
+        >div {
+          flex-basis: 100%;
+          margin-left: $marginAdaptive;
+        }
+      }
+    } //about
+  }//header-intro
+
+  .skills {
+    width: 100%;
+    margin: 10px;
+    padding: 0px;
+
+    p { margin: $marginAdaptive}
+
+    ul {
+      column-count: 1;
+    }
+
+  }
+
+  .portfolio {
+    width:100%;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    width: 200px;
+    font-size: 24px;
+    }
+
+  footer {
+    width: 100%;
+  }
+
+  #mainasup {
+    #asutp {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}//media 940

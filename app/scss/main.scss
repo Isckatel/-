@@ -251,10 +251,11 @@ footer {
 
 @media (max-width: 940px)  {
   .header-intro {
-    width: 100%;
-    margin: 10px;
+    width:90%;
+    margin: 0 auto;
     padding: 0;
     flex-direction: column;
+    align-items: center;
 
     .img-ava {
       display: flex;
@@ -267,10 +268,12 @@ footer {
       }
       .prof {margin:2px;}
 
-      .aout-text {
+      p.aout-text {
         margin: $marginAdaptive;
         line-height: 120%;
+        width: 85%;
       }
+
       .info {
         >div {
           flex-basis: 100%;
@@ -281,11 +284,13 @@ footer {
   }//header-intro
 
   .skills {
-    width: 100%;
-    margin: 10px;
+    width: 90%;
     padding: 0px;
 
-    p { margin: $marginAdaptive}
+    p {
+      margin: $marginAdaptive;
+      width: 85%;
+    }
 
     ul {
       column-count: 1;
@@ -294,10 +299,15 @@ footer {
   }
 
   .portfolio {
-    width:100%;
+    width:90%;
     margin: 0;
     flex-direction: column;
     align-items: center;
+
+    div {margin-right: 0px;}
+    div:not(:nth-child(3n)) {
+    margin-right: 0px;
+    }
   }
 
   h2 {
@@ -306,7 +316,7 @@ footer {
     }
 
   footer {
-    width: 100%;
+    width: 90%;    
   }
 
   #mainasup {

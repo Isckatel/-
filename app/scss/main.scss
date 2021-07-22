@@ -195,6 +195,7 @@ h2 {
   #asutp {
     width: 700px;
     min-height: 650px;
+    max-height: 700px;
     padding: 30px;
     background: #fff;
     border: 2px solid $mainColor;
@@ -321,14 +322,16 @@ footer {
 
   #mainasutp {
     #asutp {
+      top:100px;
       width: 90%;
       padding: 5px;
+      max-height: inherit;
 
       p {width: 90%;}
 
-      img {
-        width: 90%;
-      }
+      img {display: none}
+
+      #captionImg {display: none}
 
     }
   }
